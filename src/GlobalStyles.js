@@ -12,8 +12,7 @@ body {
     margin: 0;
     font-size: 112.5%;
     background: url('${img}');
-    background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: stretch;
     height: 100%;
     width: 100%;
     font-family: 'Londrina Solid', cursive;
