@@ -16,5 +16,6 @@ body {
     background-size: cover;
     height: 100%;
     width: 100%;
+    font-family: 'Londrina Solid', cursive;
 }
 `

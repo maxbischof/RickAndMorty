@@ -13,7 +13,9 @@ const HeaderStyled = styled.header`
   position: fixed;
   width: 100vw;
   z-index: 200;
-  background-color: hotpink;
+  background-color: #121212;
+  border-bottom: 0.5px solid #a0a0a0;
+  color: white;
   padding: 10px;
   h1 {
     text-align: center;

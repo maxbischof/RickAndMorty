@@ -7,21 +7,21 @@ import img from '../images/btn-episodes2.jpg'
 export default function Navigation() {
   return (
     <NavStyled>
-      <NavLink exact activeClassName="isActive" to="/">
+      <NavItem exact activeClassName="isActive" to="/">
         Home
-      </NavLink>
-      <NavLink activeClassName="isActive" to="/characters">
+      </NavItem>
+      <NavItem activeClassName="isActive" to="/characters">
         Characters
-      </NavLink>
-      <NavLink activeClassName="isActive" to="/episodes">
+      </NavItem>
+      <NavItem activeClassName="isActive" to="/episodes">
         Episodes
-      </NavLink>
-      <NavLink activeClassName="isActive" to="/locations">
+      </NavItem>
+      <NavItem activeClassName="isActive" to="/locations">
         Locations
-      </NavLink>
-      <NavLink activeClassName="isActive" to="/game">
+      </NavItem>
+      <NavItem activeClassName="isActive" to="/game">
         Dead or Alive
-      </NavLink>
+      </NavItem>
     </NavStyled>
   )
 }
@@ -29,11 +29,17 @@ export default function Navigation() {
 const NavStyled = styled.nav`
   position: fixed;
   z-index: 200;
-  background-color: lightpink;
+  background-color: #121212;
+  border-top: 0.5px solid #a0a0a0;
   width: 100vw;
   bottom: 0;
   display: flex;
   align-items: center;
   padding: 20px;
   justify-content: space-evenly;
+`
+
+const NavItem = styled(NavLink)`
+  color: white;
+  font-size: 15px;
 `
