@@ -7,6 +7,7 @@ export const Card = styled.div`
   padding: 20px 20px 20px 20px;
   width: 80%;
   box-shadow: 5px 5px 10px black;
+  @media (min-width: 1000px) { width: 30%; }
 `
 
 export const Headline = styled.h2`

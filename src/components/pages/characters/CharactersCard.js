@@ -58,7 +58,7 @@ const ProfileCardStyled = styled(Card)`
   justify-items: center;
 `
 const ImageStyled = styled.img`
-  width: 60%;
+  width: 200px;
   height: auto;
   grid-row: 1 / 2;
 `

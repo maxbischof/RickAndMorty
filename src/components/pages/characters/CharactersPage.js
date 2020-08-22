@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import CharactersCard from './CharactersCard'
+import styled from 'styled-components'
 export default function CharactersPage() {
   const [character, setCharacter] = useState([])
 
@@ -24,8 +25,14 @@ export default function CharactersPage() {
       )
   }, [])
   return (
-    <div>
+    <CardsList>
       {character}
-    </div>
+    </CardsList>
   )
 }
+
+const CardsList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
