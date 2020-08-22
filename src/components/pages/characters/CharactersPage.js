@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import CharactersCard from './CharactersCard'
-import Navigation from '../../../components/Navigation'
 export default function CharactersPage() {
   const [character, setCharacter] = useState([])
 
@@ -27,7 +26,6 @@ export default function CharactersPage() {
   return (
     <div>
       {character}
-      <Navigation />
     </div>
   )
 }

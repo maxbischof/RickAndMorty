@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Card from './EpisodeCard'
 import PagesNav from '../../PagesNav'
 import styled from 'styled-components'
-import Navigation from '../../Navigation'
 
 function EpisodesPage() {
   const [episodes, setEpisodes] = useState([])
@@ -40,7 +39,6 @@ function EpisodesPage() {
     <CardsList>
       {episodesCards}
       <PagesNav pages={pages} onClick={fetchData} />
-      <Navigation />
     </CardsList>
   )
 }

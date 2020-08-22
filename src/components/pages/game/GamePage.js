@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Question from './Question'
-import Navigation from '../../../components/Navigation'
 
 export default function GamePage() {
   const [currentCharacter, setcurrentCharacter] = useState({})
@@ -28,7 +27,6 @@ export default function GamePage() {
         character={currentCharacter}
         loadNextCharacter={loadNextCharacter}
       />
-      <Navigation />
     </>
   )
 }

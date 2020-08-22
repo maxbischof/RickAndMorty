@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Location from './LocationCard'
 import PagesNav from '../../PagesNav'
 import styled from 'styled-components'
-import Navigation from '../../Navigation'
 
 export default function LocationPage() {
   const [locations, setlocations] = useState([])
@@ -44,7 +43,6 @@ export default function LocationPage() {
     <CardsList>
       {LocationsCards}
       <PagesNav pages={pages} onClick={fetchPageData} />
-      <Navigation />
     </CardsList>
   )
 }

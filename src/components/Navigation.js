@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components/macro'
-import NavButton from './NavButton/NavButton'
-import img from '../images/btn-episodes2.jpg'
 
 export default function Navigation() {
   return (
