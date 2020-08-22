@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import FeedbackModal from './FeedbackModal'
 
@@ -6,15 +6,14 @@ export default function Question({ character, loadNextCharacter }) {
   const [onClickFeedback, setOnClickFeedback] = useState()
 
   function evaluateAnswer(event) {
-    if (character.status === event.target.innerHTML) {
-      setOnClickFeedback(
-       <FeedbackModal text="Correct Answer!" type="success"/>
-      )
-    } else {
-      setOnClickFeedback(
-        <FeedbackModal text="Wrong Answer!" type="failure"/>
-      )
-    }
+    const isCorrect = character.status === event.target.innerHTML
+    setOnClickFeedback(
+      <FeedbackModal
+        text={isCorrect ? 'Correct Answer!' : 'Wrong Answer!'}
+        type={isCorrect ? 'success' : 'failure'}
+      />
+    )
+    
     loadNextCharacter()
 
     setTimeout(() => {
