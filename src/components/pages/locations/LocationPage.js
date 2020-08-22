@@ -4,7 +4,7 @@ import PagesNav from '../../PagesNav'
 import styled from 'styled-components'
 import Navigation from '../../Navigation'
 
-export default function LocationPage({ setHeadline }) {
+export default function LocationPage() {
   const [locations, setlocations] = useState([])
   const [pages, setPages] = useState()
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Question from './Question'
 import Navigation from '../../../components/Navigation'
 
-export default function GamePage({ setHeadline }) {
+export default function GamePage() {
   const [currentCharacter, setcurrentCharacter] = useState({})
   const [charactersLength, setCharactersLength] = useState()
 

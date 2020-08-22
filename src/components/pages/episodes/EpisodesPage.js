@@ -4,7 +4,7 @@ import PagesNav from '../../PagesNav'
 import styled from 'styled-components'
 import Navigation from '../../Navigation'
 
-function EpisodesPage({ setHeadline }) {
+function EpisodesPage() {
   const [episodes, setEpisodes] = useState([])
   const [pages, setPages] = useState()
 
