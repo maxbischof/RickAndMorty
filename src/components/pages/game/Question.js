@@ -13,7 +13,7 @@ export default function Question({ character, loadNextCharacter }) {
         type={isCorrect ? 'success' : 'failure'}
       />
     )
-    
+
     loadNextCharacter()
 
     setTimeout(() => {
@@ -25,11 +25,17 @@ export default function Question({ character, loadNextCharacter }) {
     <QuestionBox>
       {onClickFeedback}
       <Image src={character.image} />
+
       <AliveButton onClick={(event) => evaluateAnswer(event)}>
         Alive
       </AliveButton>
-      <DeadButton onClick={(event) => evaluateAnswer(event)}>Dead</DeadButton>
-      <UnknownButton>Unknown</UnknownButton>
+      <DeadButton onClick={(event) => evaluateAnswer(event)}>
+        Dead
+      </DeadButton>
+      <UnknownButton onClick={(event) => evaluateAnswer(event)}>
+        unknown
+      </UnknownButton>
+
     </QuestionBox>
   )
 }
