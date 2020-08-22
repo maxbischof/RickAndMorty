@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import Navigation from './Navigation'
+import Navigation from './navigations/Navigation'
 import { useLocation } from 'react-router-dom'
-import NavigationStartPage from './NavigationStartPage'
+import NavigationStartPage from './navigations/NavigationStartPage'
 import Header from './Header'
 import capitalizeFirstLetter from './utils/Capitalize'
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Card from './EpisodeCard'
-import PagesNav from '../../PagesNav'
+import PagesNav from '../../navigations/PagesNav'
 import styled from 'styled-components'
 
 function EpisodesPage() {

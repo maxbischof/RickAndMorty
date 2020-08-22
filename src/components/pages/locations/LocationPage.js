@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Location from './LocationCard'
-import PagesNav from '../../PagesNav'
+import PagesNav from '../../navigations/PagesNav'
 import styled from 'styled-components'
 
 export default function LocationPage() {
